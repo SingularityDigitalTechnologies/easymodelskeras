@@ -1,0 +1,8 @@
+# Vim
+
+*.swo
+*.swp
+
+# Python
+
+*.pyc
