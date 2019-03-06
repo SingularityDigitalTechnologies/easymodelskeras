@@ -6,3 +6,8 @@
 # Python
 
 *.pyc
+
+# Pypi
+
+dist
+build

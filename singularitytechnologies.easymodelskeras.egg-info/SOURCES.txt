@@ -1,7 +1,6 @@
 README.md
 setup.py
 easymodelskeras/__init__.py
-singularitytechnologies.easymodelskeras.egg-info/.requires.txt.swp
 singularitytechnologies.easymodelskeras.egg-info/PKG-INFO
 singularitytechnologies.easymodelskeras.egg-info/SOURCES.txt
 singularitytechnologies.easymodelskeras.egg-info/dependency_links.txt
