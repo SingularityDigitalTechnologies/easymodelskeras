@@ -37,12 +37,12 @@ class KerasModel(Model):
 
         return model
 
-    def train_epoch(self, model, x_train, y_train, batch_size, epoch_step):
+    def train_epoch(self, model, x_train, y_train, batch_size, round_step):
         model.fit(
             x_train,
             y_train,
             batch_size=batch_size,
-            epochs=epoch_step,
+            epochs=round_step,
             verbose=1,
         )
 

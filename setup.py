@@ -5,7 +5,7 @@ with open('README.md', 'r') as f:
 
 setuptools.setup(
     name='singularitytechnologies.easymodelskeras',
-    version='0.1.4dev',
+    version='0.1.10dev',
     author='Sam Lacey',
     author_email='sam.lacey@singularity-technologies.io',
     description='Easy to use Keras Machine Learning Model ',
@@ -36,7 +36,7 @@ setuptools.setup(
         'Pygments==2.3.1',
         'PyYAML==4.2b1',
         'scipy==1.2.1',
-        'singularitytechnologies.easymodels==0.1.3.dev0',
+        'singularitytechnologies.easymodels==0.1.7dev',
         'six==1.12.0',
         'tensorboard==1.12.2',
         'tensorflow==1.12.0',
