@@ -27,7 +27,7 @@ class KerasModel(Model):
             print('WARNING: loss not set, using default %s' % DEFAULT_LOSS)
             self.loss = DEFAULT_LOSS
 
-    def compile_model(self, model):
+    def compile(self, model):
         print('Compiling model')
         model.compile(
             loss=self.loss,
@@ -37,18 +37,7 @@ class KerasModel(Model):
 
         return model
 
-    def train_epoch(self, model, x_train, y_train, batch_size, round_step):
-        model.fit(
-            x_train,
-            y_train,
-            batch_size=batch_size,
-            epochs=round_step,
-            verbose=1,
-        )
-
-        return model
-
-    def save_model(self, model_name, model, export_path, epoch):
+    def save(self, model_name, model, export_path, epoch):
         model_h5 = '%s.h5' % model_name
         model_yaml = '%s.yaml' % model_name
         zip_name = '%s-%03d.zip' % (model_name, epoch)
@@ -77,3 +66,28 @@ class KerasModel(Model):
             json.dump(fitness, f)
 
         print('Fitness saved')
+
+
+class MemoryModel(KerasModel):
+    def train(self, model, round_step, x_train, y_train):
+        model.fit(
+            x_train,
+            y_train,
+            batch_size=self.batch_size,
+            epochs=round_step,
+            verbose=1,
+        )
+
+        return model
+
+
+class GeneratorModel(KerasModel):
+    def train(self, model, round_step, train):
+        model.fit_generator(
+            train,
+            epochs=round_step,
+            steps_per_epoch=train.n/self.batch_size,
+            verbose=1,
+        )
+
+        return model
