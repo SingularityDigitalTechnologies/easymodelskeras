@@ -43,7 +43,7 @@ setuptools.setup(
         'termcolor==1.1.0',
         'traitlets==4.3.2',
         'wcwidth==0.1.7',
-        'Werkzeug==0.14.1',
+        'Werkzeug==0.15.3',
     ],
     classifiers=[
         'Programming Language :: Python :: 3',
