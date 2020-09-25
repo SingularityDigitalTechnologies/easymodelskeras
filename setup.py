@@ -39,7 +39,7 @@ setuptools.setup(
         'singularitytechnologies.easymodels==0.1.10dev',
         'six==1.12.0',
         'tensorboard==1.12.2',
-        'tensorflow==1.12.0',
+        'tensorflow==1.15.4',
         'termcolor==1.1.0',
         'traitlets==4.3.2',
         'wcwidth==0.1.7',
