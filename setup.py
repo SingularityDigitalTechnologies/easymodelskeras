@@ -34,7 +34,7 @@ setuptools.setup(
         'protobuf==3.7.0',
         'ptyprocess==0.6.0',
         'Pygments==2.3.1',
-        'PyYAML==4.2b1',
+        'PyYAML==5.4',
         'scipy==1.2.1',
         'singularitytechnologies.easymodels==0.1.10dev',
         'six==1.12.0',
