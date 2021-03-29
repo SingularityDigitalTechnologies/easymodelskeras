@@ -33,7 +33,7 @@ setuptools.setup(
         'prompt-toolkit==2.0.9',
         'protobuf==3.7.0',
         'ptyprocess==0.6.0',
-        'Pygments==2.3.1',
+        'Pygments==2.7.4',
         'PyYAML==4.2b1',
         'scipy==1.2.1',
         'singularitytechnologies.easymodels==0.1.10dev',
