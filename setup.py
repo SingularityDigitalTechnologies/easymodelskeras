@@ -31,7 +31,7 @@ setuptools.setup(
         'pexpect==4.6.0',
         'pickleshare==0.7.5',
         'prompt-toolkit==2.0.9',
-        'protobuf==3.7.0',
+        'protobuf==3.15.0',
         'ptyprocess==0.6.0',
         'Pygments==2.3.1',
         'PyYAML==4.2b1',
