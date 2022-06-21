@@ -26,7 +26,7 @@ setuptools.setup(
         'Keras-Applications==1.0.7',
         'Keras-Preprocessing==1.0.9',
         'Markdown==3.0.1',
-        'numpy==1.16.2',
+        'numpy==1.22.0',
         'parso==0.3.4',
         'pexpect==4.6.0',
         'pickleshare==0.7.5',
